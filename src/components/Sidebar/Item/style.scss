@@ -1,0 +1,94 @@
+@import "../../../style.scss";
+
+.sidebar {
+    & > ul, & > .sidebar-footer > ul {
+        & > li {
+            display: block;
+            line-height: 40px;
+            border-left: 3px solid transparent;
+            padding: 0px 12px 0px 30px;
+            user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            font-size: 14px;
+            color: $gray;
+            font-weight: bold;
+            transition: .5s all ease;
+            text-transform: uppercase;
+            position: relative;
+
+            &.loading {
+                .content {
+                    height: 16px;
+                    width: 120px;
+                    display: inline-block;
+                    top: 3px;
+                    left: 6px;
+                    border-radius: 3px;
+                }
+            }
+
+            &.active {
+                border-color: $primary;
+                // background: #E8F2FE;
+                color: $primary;
+
+                svg {
+                    color: $primary;
+                }
+
+                .dropdown-container {
+                    svg {
+                        display: initial;
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-container {
+                    svg {
+                        display: initial;
+                    }
+                }
+            }
+
+            svg {
+                transition: .5s all ease;
+                position: relative;
+                margin-right: 12px;
+            }
+
+            .dropdown-container {
+                position: absolute;
+                right: 0px;
+                width: 27px;
+                height: 40px;
+
+                svg {
+                    display: none;
+                    position: relative;
+                    font-size: 24px;
+                    top: 5px;
+                }
+            }
+
+            .sidebar-item-content {
+                width: 200px;
+                cursor: pointer;
+            }
+
+            span {
+                max-width: 170px;
+                display: inline-block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-wrap: break-word;
+                white-space: nowrap;
+                line-height: 1;
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+}

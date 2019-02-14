@@ -1,0 +1,24 @@
+@import "../../../style.scss";
+
+.tab {
+    li {
+        display: inline-block;
+        line-height: 36px;
+        border-bottom: 3px solid transparent;
+        padding: 0px;
+        padding-top: 11px;
+        font-size: 14px;
+        margin-right: 24px;
+        cursor: pointer;
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        color: $gray;
+
+        &.active {
+            border-color: $primary;
+            color: $text;
+        }
+    }
+}

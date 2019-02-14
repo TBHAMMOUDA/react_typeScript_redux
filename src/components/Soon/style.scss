@@ -1,0 +1,32 @@
+@import "../../style.scss";
+
+.soon {
+    color: $gray;
+    width: 100%;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    div {
+        margin: auto;
+        margin-top: 50px;
+        width: fit-content;
+        width: -ms-fit-content;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+    }
+    
+    svg {
+        font-size: 128px;
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

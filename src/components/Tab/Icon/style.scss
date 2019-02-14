@@ -1,0 +1,20 @@
+@import "../../../style.scss";
+
+.tab {
+    li {
+        &.tab-icon {
+            float: right;
+            padding: 0px 12px;
+            margin: 0px;
+            line-height: $header-height;
+            border-bottom: none;
+        }
+
+        &.active-icon {
+            svg {
+                color: $primary;
+                transition: .5s all ease;
+            }
+        }
+    }
+}

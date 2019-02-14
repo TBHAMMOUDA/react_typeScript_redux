@@ -1,0 +1,16 @@
+@import "../../../style.scss";
+
+.table {
+    margin-left: -4px;
+
+    tr {
+        background: $white;
+        border-left: 4px solid white;
+        // border-bottom: 4px solid #F5F6F8;
+
+        &:hover {
+            border-left-color: $primary;
+            background: #E6EDF7;
+        }
+    }
+}

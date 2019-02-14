@@ -1,0 +1,12 @@
+@import "../../style.scss";
+
+.error-component {
+    background: $error;
+    height: 100%;
+    color: white;
+    text-align: center;
+
+    h1 {
+        font-size: 148px;
+    }
+}

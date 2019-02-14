@@ -1,0 +1,13 @@
+@import "../../style.scss";
+
+.view {
+    padding-bottom: 0px !important;
+    padding-top: 8px !important;
+    padding-left: 24px !important;
+    height: calc(100vh - #{$navbar-height + $header-height * 2});
+    overflow: auto;
+
+    &.settings {
+        height: calc(100vh - #{$navbar-height + $header-height * 2});
+    }
+}

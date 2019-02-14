@@ -1,0 +1,36 @@
+@import "../../style.scss";
+
+.settings {
+    width: 100%;
+    padding: 16px;
+    height: calc(100vh - #{$navbar-height} * 2 + 10px);
+    background: #ffffff;
+    overflow: auto;
+
+    .fixed-container {
+        max-width: 800px;
+
+        & > div {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+
+    h6 {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $text;
+    }
+
+    p {
+        color: $gray;
+    }
+
+    .notifications {
+        p {
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 24px;
+        }
+    }
+}

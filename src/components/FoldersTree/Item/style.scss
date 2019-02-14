@@ -1,0 +1,29 @@
+@import "../../../style.scss";
+
+.folders-tree-item {
+    .folders-tree-item-container {
+        padding: 8px 16px;
+        color: $text;
+
+        svg {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background: #E5F0FF;
+        }
+
+        &.selected {
+            background: $primary;
+            color: white;
+            
+            svg {
+                color: white;
+            }
+        }
+    }
+
+    .folders-tree-subs {
+        margin-left: 16px;
+    }
+}

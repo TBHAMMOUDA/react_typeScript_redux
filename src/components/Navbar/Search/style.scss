@@ -1,0 +1,54 @@
+@import "../../../style.scss";
+
+nav {
+    .search-form {
+        display: inline-block;
+        position: relative;
+
+        input {
+            border: none;
+            border-radius: 3px;
+            background: $silver;
+            line-height: 1;
+            color: $text;
+            padding: 12px;
+            padding-left: 36px;
+            padding-right: 36px;
+            margin-right: -36px;
+            padding-bottom: 10px;
+            width: 450px;
+            font-size: 14px;
+            transition: .5s all ease;
+
+            &::placeholder {
+                color: $gray;
+                position: relative;
+                top: 1px;
+            }
+
+            // &:focus {
+            //     padding-left: 12px;
+
+            //     & + svg.search-icon {
+            //         display: none;
+            //     }
+            // }
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: .5s all ease;
+
+            &.search-icon {
+                left: 12px;
+            }
+
+            &.search-arrow {
+                cursor: pointer;
+                right: -20px;
+            }
+        }
+    }
+}

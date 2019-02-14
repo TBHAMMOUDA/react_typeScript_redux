@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+.notification {
+    background: #1D2E40;
+    border-radius: 4px;
+    color: white;
+    padding: 12px 16px;
+    width: 400px;
+    box-shadow: 0px 3px 6px rgba(#1D2E40, 0.5);
+    font-size: 14px;
+    margin-top: 12px;
+
+    .close-icon {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        right: 16px;
+
+        svg {
+            font-size: 20px;
+        }
+    }
+}

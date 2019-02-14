@@ -1,0 +1,7 @@
+@import "../../../style.scss";
+
+.error-component {
+    &.error-404 {
+        background: $gray !important;
+    }
+}

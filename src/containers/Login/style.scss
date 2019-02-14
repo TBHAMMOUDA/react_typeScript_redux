@@ -1,0 +1,59 @@
+@import "../../style.scss";
+
+.auth {
+    height: 100vh;
+    background: white;
+
+    .cover {
+        width: $cover-width;
+        background: $white;
+        height: calc(100%);
+        position: absolute;
+        background: $silver;
+
+        .cover-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        padding-left: $cover-width;
+
+        .fixed-container {
+            max-width: 550px;
+            margin: auto;
+
+            p {
+                line-height: 1.5;
+                padding: 24px 0px;
+
+                a {
+                    color: $primary !important;
+                    text-decoration: none !important;
+                }
+
+                &.link{
+                    a {
+                        color: $gray !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .auth {
+        .cover {
+            display: none;
+        }
+
+        main {
+            padding-left: 0px;
+        }
+    }
+}

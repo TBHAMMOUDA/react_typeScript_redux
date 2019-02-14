@@ -1,0 +1,14 @@
+@import "../../../style.scss";
+
+.small-modal {
+    .modal-dialog {
+        .modal-content {
+            padding: 8px;
+
+            .modal-footer, .modal-header {
+                border: none !important;
+                background: none;
+            }
+        }
+    }
+}

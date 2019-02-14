@@ -1,0 +1,9 @@
+@import "../../../style.scss";
+
+.dropdown-menu {
+    .dropdown-item {
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 2;
+    }
+}

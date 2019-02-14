@@ -1,0 +1,81 @@
+@import "../../style.scss";
+
+.sidebar {
+    box-shadow: 2px 0px 2px rgba($shadow, .5);
+    width: $sidebar-width;
+    background: $white;
+    height: calc(100% - #{$navbar-height});
+    position: absolute;
+    z-index: 900;
+
+    .sidebar-header {
+        padding: 24px 20px 12px 32px;
+        font-size: 14px;
+        color: $gray;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        svg {
+            float: right;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        padding: 0px;
+        height: calc(100% - #{$navbar-height} - 50px);
+        overflow: auto;
+        list-style-type: none;
+
+        li.show-more {
+            span {
+                cursor: pointer;
+                font-size: 12px;
+                display: inline-block;
+                text-decoration: underline;
+                text-decoration-style: dotted;
+            }
+        }
+    }
+
+    .sidebar-footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        
+        &.sidebar-footer-shadow {
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, .2);
+        }
+
+        ul {
+            padding: 0px;
+            height: calc(100% - #{$navbar-height} - 50px);
+            overflow: auto;
+            list-style-type: none;
+        }
+        
+        .sidebar-btn {
+            transition: .5s all;
+            cursor: pointer;
+            width: 50%;
+            background: transparent;
+            padding: 12px;
+            border: none;
+            font-size: 14px;
+            border-bottom: 4px solid white;
+            border-top: 4px solid white;
+            color: $gray;
+            text-transform: uppercase;
+
+            svg {
+                margin-right: 8px;
+            }
+
+            &.active, &:hover {
+                border-bottom-color: $primary;
+                color: $primary;
+            }
+        }
+    }
+}

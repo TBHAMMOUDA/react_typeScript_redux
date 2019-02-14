@@ -1,0 +1,177 @@
+@import "../../style.scss";
+
+.button {
+    border: none;
+    border-radius: 3px;
+    line-height: 1;
+    padding: 8px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    color: $white;
+    transition: .5s all ease;
+    border-width: 1px;
+    border-style: solid;
+
+    &.large {
+        padding: 14px 32px;
+        font-size: 14px;
+    }
+
+    &.border-less {
+        border: none;
+    }
+
+    &.outline {
+        background: transparent !important;
+
+        &:hover {
+            color: $white !important;
+        }
+    }
+
+    &.dark {
+        border-color: $gray;
+        background: $gray;
+
+        &:hover {
+            background: darken($color: $gray, $amount: 10);
+            border-color: darken($color: $gray, $amount: 10);
+        }
+    }
+
+    &.primary {
+        border-color: $primary;
+        background: $primary;
+
+        &:hover {
+            background: darken($color: $primary, $amount: 10);
+            border-color: darken($color: $primary, $amount: 10);
+        }
+    }
+
+    &.error {
+        border-color: $error;
+        background: $error;
+
+        &:hover {
+            background: darken($color: $error, $amount: 10);
+            border-color: darken($color: $error, $amount: 10);
+        }
+    }
+
+    &.success {
+        border-color: $success;
+        background: $success;
+
+        &:hover {
+            background: darken($color: $success, $amount: 10);
+            border-color: darken($color: $success, $amount: 10);
+        }
+    }
+
+    &.warning {
+        border-color: $warning;
+        background: $warning;
+
+        &:hover {
+            background: darken($color: $warning, $amount: 10);
+            border-color: darken($color: $warning, $amount: 10);
+        }
+    }
+
+    &.outline.dark {
+        border-color: $gray;
+        color: $gray;
+
+        &:hover {
+            background: $gray !important;
+        }
+    }
+
+    &.outline.primary {
+        border-color: $primary;
+        color: $primary;
+
+        &:hover {
+            background: $primary !important;
+        }
+    }
+    
+    &.outline.error {
+        border-color: $error;
+        color: $error;
+
+        &:hover {
+            background: $error !important;
+        }
+    }
+    
+    &.outline.success {
+        border-color: $success;
+        color: $success;
+
+        &:hover {
+            background: $success !important;
+        }
+    }
+    
+    &.outline.warning {
+        border-color: $warning;
+        color: $warning;
+
+        &:hover {
+            background: $warning !important;
+        }
+    }
+
+    &.share {
+        color: $gray !important;
+        border: thin solid $gray !important;
+
+        &:hover {
+            border: thin solid $primary !important;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+@keyframes ld {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.m-progress {
+    position: relative;
+    opacity: .9;
+    color: transparent !important;
+
+    &:hover, &:active, &:focus {
+        cursor: default;
+        color: transparent;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        border: 1px solid #fff;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        top: 50%;
+        left: 50%;
+        margin-top: -10px;
+        margin-left: -10px;
+        width: 20px;
+        height: 20px;
+        animation: ld 1s ease-in-out infinite;
+        cursor: default;
+    }
+}

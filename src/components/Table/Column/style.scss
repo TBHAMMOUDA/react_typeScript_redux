@@ -1,0 +1,81 @@
+@import "../../../style.scss";
+
+.table {
+    td {
+        border: none !important;
+        // border-bottom: 4px solid #F5F6F8 !important;
+        vertical-align: middle !important;
+        text-overflow: ellipsis;
+        overflow: auto;
+
+        & > img {
+            height: 40px;
+            width: 60px;
+            border-radius: 4px;
+            background: #E7ECF2;
+        }
+
+        & > .image-box-folder {
+            .image-box-folder-header {
+                height: 6px;
+                width: 28px;
+                border-radius: 4px 4px 0px 0px;
+                background: #E7ECF2;
+            }
+
+            .image-box {
+                height: 34px;
+                line-height: 34px;
+                border-radius: 0px 4px 4px 4px;
+            }
+        }
+
+        & .image-box {
+            height: 40px;
+            width: 60px;
+            border-radius: 4px;
+            background: #E7ECF2;
+            color: #A9AFBD;
+            line-height: 40px;
+            font-size: 10px;
+            text-align: center;
+
+            svg {
+                font-size: 22px;
+                top: 6px;
+            }
+        }
+
+        & > .button {
+            position: relative;
+            top: -3px;
+        }
+
+        & > * {
+            display: inline-block;
+
+            svg {
+                font-size: 28px;
+                position: relative;
+                top: 3px;
+                margin: 0px 12px;
+            }
+        }
+
+        .loading {
+            background: transparent;
+        }
+
+        .loading, .placeholder {
+            width: 100px;
+            height: 20px;
+            display: inline-block;
+            border-radius: 3px;
+
+            &.image {
+                width: 60px;
+                height: 40px;
+            }
+        }
+    }
+}

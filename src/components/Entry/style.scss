@@ -1,0 +1,58 @@
+@import "../../style.scss";
+
+.entry {
+    position: relative;
+    padding-bottom: 12px;
+    text-align: left;
+
+    label {
+        color: #434C5E;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    input {
+        padding: 20px 12px;
+        font-size: 14px;
+        border: 1px solid $gray;
+
+        &.large {
+            padding: 24px 16px;
+            font-size: 16px;
+        }
+
+        &:active, &:focus {
+            box-shadow: none;
+            border-color: $primary;
+        }
+
+        &:invalid, &.invalid {
+            border: 1px solid $error;
+            box-shadow: none;
+        }
+    }
+
+    input::placeholder {
+        color: $gray !important;
+    }
+
+    .forgot-password {
+        position: absolute;
+        font-size: 12px;
+        right: 0px;
+        top: 6px;
+        color: $gray !important;
+        text-decoration: none !important;
+
+        &:hover {
+            color: #434C5E !important;
+        }
+    }
+
+    .entry-invalid {
+        color: $error;
+        font-size: 12px;
+        margin-top: 8px;
+        margin-bottom: 0px;
+    }
+}

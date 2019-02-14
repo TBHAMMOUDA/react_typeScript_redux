@@ -1,0 +1,14 @@
+@import "../../style.scss";
+
+.notice {
+    .close-icon {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        right: 16px;
+
+        svg {
+            font-size: 20px;
+        }
+    }
+}

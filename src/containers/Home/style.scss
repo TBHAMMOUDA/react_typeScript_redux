@@ -1,0 +1,7 @@
+@import "../../style.scss";
+
+.home {
+    width: 100%;
+    height: calc(100% - #{$navbar-height});
+    padding-left: $sidebar-width;
+}

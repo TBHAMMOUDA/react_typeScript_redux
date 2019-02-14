@@ -1,0 +1,10 @@
+@import "../../style.scss";
+
+.folders-tree {
+    .folders {
+        border: thin solid $shadow;
+        border-radius: 4px;
+        overflow: auto;
+        height: 300px;
+    }
+}

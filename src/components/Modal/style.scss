@@ -1,0 +1,54 @@
+@import "../../style.scss";
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            box-shadow: 0 1px 2px rgba(54,57,70,.5);
+            border-radius: 3px;
+            border: none;
+
+            .modal-header {
+                border: none;
+                border-bottom: thin solid rgba($shadow, .5);
+
+                .modal-icon {
+                    background: #E5F0FF;
+                    display: inline-block;
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 12px;
+                    border-radius: 24px;
+                    text-align: center;
+
+                    svg {
+                        position: relative;
+                        text-align: center;
+                        top: calc(50% - 2px);
+                        transform: translateY(-50%);
+                        font-size: 16px;
+                        color: $primary;
+                    }
+
+                    &.danger {
+                        background: rgba($error, .2);
+
+                        svg {
+                            color: $error;
+                        }
+                    }
+                }
+
+                .modal-title {
+                    line-height: 40px;
+                }
+            }
+
+            .modal-footer {
+                border: none;
+                border-top: thin solid rgba($shadow, .5);
+                border-radius: 0px 0px 3px 3px;
+                background: #FBFCFC;
+            }
+        }
+    }
+}
